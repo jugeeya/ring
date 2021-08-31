@@ -237,7 +237,7 @@ pub(crate) mod arm {
             }
 
             #[cfg(all(
-                any(target_os = "android", target_os = "fuchsia", target_os = "linux"),
+                any(target_os = "android", target_os = "fuchsia", target_os = "linux", target_os = "switch"),
                 any(target_arch = "arm", target_arch = "aarch64")
             ))]
             {
