@@ -252,7 +252,6 @@ pub(crate) mod arm {
 
     features! {
         // Keep in sync with `ARMV7_NEON`.
-        #[cfg(all(any(target_arch = "aarch64", target_arch = "arm"), not(target_os = "switch")))]
         NEON {
             mask: 1 << 0,
             aarch64_apple: true,
